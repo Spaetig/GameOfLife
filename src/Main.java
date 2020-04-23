@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// test
 public class Main {
 
     private static int Dimension;
