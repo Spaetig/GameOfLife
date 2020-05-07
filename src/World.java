@@ -6,6 +6,7 @@ public class World extends JTable {
     TableColumn[] tableColumns;
     Cell[][] cells;
     Game parent;
+    public int tableHeight;
 
     public World(int numRows, int width, Game parent) {
         super(numRows, numRows);
@@ -28,6 +29,8 @@ public class World extends JTable {
                 cells[i][j].saveNeighbours(cells);
             }
         }
+        tableHeight = this.getHeight();
+
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
